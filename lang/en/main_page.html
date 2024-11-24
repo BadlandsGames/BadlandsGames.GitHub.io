@@ -18,7 +18,23 @@
         document.location.assign(url_please);
       }
     </script>
-    <div id="bad_ajax_header"></div>
+    <nav class="navbar navbar-expand-sm navbar-dark justify-content-center" style="background-color: black;">
+      <div class="container-fluid justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://badlandsgames.github.io/lang/en/main_page.html">Home</a>
+          </li>
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+            <ul class="dropdown-menu dropdown-menu-start">
+              <li><h5 class="dropdown-header">Active Projects</h5></li>
+              <li><a class="dropdown-item" href="./products/light_cell.html">LIGHT CELL</a></li>
+              <li><a class="dropdown-item" href="../products/prism.html">PRISM</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </nav>
     <div class="container-fluid p-5 text-white text-center" style="height: 50vh;background-image: url('../../e.png');background-size: 100%;background-repeat: no-repeat;">
       <h1>We are a community-based game studio.</h1>
       <p>(trust me there's more)</p>
@@ -65,7 +81,9 @@
         <li>Advertising Director</li>
         <li>Cameraman</li>
       </ul>
-      <div id="bad_ajax_footer"></div>
+      <img src="https://badlandsgames.github.io/Untitled.png" alt="Badlands Games Logo" style="width: 10vh;margin-left: auto;margin-right:auto;display: block"/>
+      <p id="bad_footer" class="text-center"></p>
+      <script>const currentYear = new Date().getFullYear().toString();document.getElementById("bad_footer").innerHTML = `&copy; 2024 - ` + currentYear + ` Badlands Games`;</script>  
     </div>
   </body>
 </html>
