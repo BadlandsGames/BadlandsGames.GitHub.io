@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Kosugi Maru' rel='stylesheet'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
+    <title>Badlands Games - Main Page</title>
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <style>
+      * {
+        font-family: 'Kosugi Maru';
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function sethref(url_please) {
+        document.location.assign(url_please);
+      }
+    </script>
+    <nav class="navbar navbar-expand-sm navbar-dark justify-content-center" style="background-color: black;">
+      <div class="container-fluid justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://badlandsgames.github.io/lang/en/main_page.html">Home</a>
+          </li>
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+            <ul class="dropdown-menu dropdown-menu-start">
+              <li><h5 class="dropdown-header">Active Projects</h5></li>
+              <li><a class="dropdown-item" href="../products/light_cell.html">LIGHT CELL</a></li>
+              <li><a class="dropdown-item" href="../products/prism.html">PRISM</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-5"></div>
+    <div class="container mt-5">
+      <hr>
+      <img src="../../../Untitled.png" alt="Badlands Games Logo" style="width: 10vh;margin-left: auto;margin-right:auto;display: block"/>
+      <p id="bad_footer" class="text-center"></p>
+      <script>
+        const currentYear = new Date().getFullYear().toString();
+        document.getElementById("bad_footer").innerHTML = `&copy; 2024 - ` + currentYear + ` Badlands Games`;
+      </script>
+    </div>
+  </body>
+</html>
