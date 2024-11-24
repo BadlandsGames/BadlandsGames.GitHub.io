@@ -10,6 +10,7 @@
     <title>Badlands Games - Main Page</title>
     <link rel="icon" type="image/png" href="https://badlandsgames.github.io/favicon.png">
     <style>* {font-family: 'Kosugi Maru';}</style>
+    <script src="setup.js"></script>
   </head>
   <body>
     <script>
@@ -17,7 +18,7 @@
         document.location.assign(url_please);
       }
     </script>
-    <object type="text/html" data="./header.html"></object>
+    <div id="bad_ajax_header"></div>
     <div class="container-fluid p-5 text-white text-center" style="height: 50vh;background-image: url('../../e.png');background-size: 100%;background-repeat: no-repeat;">
       <h1>We are a community-based game studio.</h1>
       <p>(trust me there's more)</p>
@@ -64,7 +65,7 @@
         <li>Advertising Director</li>
         <li>Cameraman</li>
       </ul>
-      <object type="text/html" data="./footer.html"></object>
+      <div id="bad_ajax_footer"></div>
     </div>
   </body>
 </html>
